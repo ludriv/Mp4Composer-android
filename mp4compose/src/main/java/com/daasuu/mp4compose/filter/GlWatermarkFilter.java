@@ -24,7 +24,7 @@ public class GlWatermarkFilter extends GlOverlayFilter {
     }
 
     @Override
-    protected void drawCanvas(Canvas canvas) {
+    protected void drawCanvas(Canvas canvas, long presentationTimeUs) {
         if (bitmap != null && !bitmap.isRecycled()) {
             switch (position) {
                 case LEFT_TOP:
